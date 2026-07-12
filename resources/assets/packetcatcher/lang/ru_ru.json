@@ -1,13 +1,13 @@
 {
-  "text.autoconfig.packetcatcher.title": "Packet catcher config",
-  "text.autoconfig.packetcatcher.option.enabled": "Enabled?",
-  "text.autoconfig.packetcatcher.option.titleFormat": "Title format",
-  "text.autoconfig.packetcatcher.option.valueFormat": "Value format",
-  "text.autoconfig.packetcatcher.option.timeFormat": "Time format",
-  "text.autoconfig.packetcatcher.option.serverboundFilter": "Serverbound filter",
-  "text.autoconfig.packetcatcher.option.serverboundFilter.entries": "Entries",
-  "text.autoconfig.packetcatcher.option.serverboundFilter.type": "Type",
-  "text.autoconfig.packetcatcher.option.clientboundFilter": "Clientbound filter",
-  "text.autoconfig.packetcatcher.option.clientboundFilter.entries": "Entries",
-  "text.autoconfig.packetcatcher.option.clientboundFilter.type": "Type"
+  "text.autoconfig.packetcatcher.title": "Конфигурация Packet catcher",
+  "text.autoconfig.packetcatcher.option.enabled": "Включён?",
+  "text.autoconfig.packetcatcher.option.titleFormat": "Формат заголовка",
+  "text.autoconfig.packetcatcher.option.valueFormat": "Формат значения",
+  "text.autoconfig.packetcatcher.option.timeFormat": "Формат времени",
+  "text.autoconfig.packetcatcher.option.serverboundFilter": "Фильтр serverbound",
+  "text.autoconfig.packetcatcher.option.serverboundFilter.entries": "Пакеты",
+  "text.autoconfig.packetcatcher.option.serverboundFilter.type": "Тип фильтрации",
+  "text.autoconfig.packetcatcher.option.clientboundFilter": "Фильтр clientbound",
+  "text.autoconfig.packetcatcher.option.clientboundFilter.entries": "Пакеты",
+  "text.autoconfig.packetcatcher.option.clientboundFilter.type": "Тип фильтрации"
 }

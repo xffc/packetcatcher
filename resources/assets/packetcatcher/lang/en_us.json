@@ -1,0 +1,13 @@
+{
+  "text.autoconfig.packetcatcher.title": "Packet catcher config",
+  "text.autoconfig.packetcatcher.option.enabled": "Enabled?",
+  "text.autoconfig.packetcatcher.option.titleFormat": "Title format",
+  "text.autoconfig.packetcatcher.option.valueFormat": "Value format",
+  "text.autoconfig.packetcatcher.option.timeFormat": "Time format",
+  "text.autoconfig.packetcatcher.option.serverboundFilter": "Serverbound filter",
+  "text.autoconfig.packetcatcher.option.serverboundFilter.entries": "Packets",
+  "text.autoconfig.packetcatcher.option.serverboundFilter.type": "Filter type",
+  "text.autoconfig.packetcatcher.option.clientboundFilter": "Clientbound filter",
+  "text.autoconfig.packetcatcher.option.clientboundFilter.entries": "Packets",
+  "text.autoconfig.packetcatcher.option.clientboundFilter.type": "Filter type"
+}
