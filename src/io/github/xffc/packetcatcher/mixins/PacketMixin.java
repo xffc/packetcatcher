@@ -18,7 +18,10 @@ public class PacketMixin {
     @Shadow
     private Channel channel;
 
-    @Inject(method = "channelActive", at = @At("HEAD"))
+    @Inject(
+            method = "channelActive",
+            at = @At(value = "INVOKE", target = "Lio/netty/channel/ChannelHandlerContext;channel()Lio/netty/channel/Channel;")
+    )
     private void openChannel(ChannelHandlerContext ctx, CallbackInfo ci) {
         PacketLogger.start(ctx.channel());
     }

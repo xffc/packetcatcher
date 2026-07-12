@@ -9,26 +9,27 @@ import net.minecraft.world.InteractionResult
 import java.time.format.DateTimeFormatter
 
 object PacketCatcherMod : ClientModInitializer {
-    private lateinit var config: ModConfig
-
     override fun onInitializeClient() {
         val holder = AutoConfig.register(ModConfig::class.java) { definition, configClass ->
             Toml4jConfigSerializer(definition, configClass)
         }
-        
-        holder.registerSaveListener { _, config ->
-            PacketLogger.enabled = config.enabled
-            PacketLogger.titleFormat = config.titleFormat
-            PacketLogger.valueFormat = config.valueFormat
-            PacketLogger.dateFormatter = DateTimeFormatter.ofPattern(config.timeFormat)
-            PacketLogger.filters = mapOf(
-                PacketFlow.CLIENTBOUND to (config.clientboundFilter.type to config.clientboundFilter.entries.split(";")),
-                PacketFlow.SERVERBOUND to (config.serverboundFilter.type to config.serverboundFilter.entries.split(";"))
-            )
 
+        holder.registerSaveListener { _, config ->
+            loadConfig(config)
             InteractionResult.SUCCESS
         }
 
-        config = holder.config
+        loadConfig(holder.config)
+    }
+
+    private fun loadConfig(config: ModConfig) {
+        PacketLogger.enabled = config.enabled
+        PacketLogger.titleFormat = config.titleFormat
+        PacketLogger.valueFormat = config.valueFormat
+        PacketLogger.dateFormatter = DateTimeFormatter.ofPattern(config.timeFormat)
+        PacketLogger.filters = mapOf(
+            PacketFlow.CLIENTBOUND to (config.clientboundFilter.type to config.clientboundFilter.entries.split(";")),
+            PacketFlow.SERVERBOUND to (config.serverboundFilter.type to config.serverboundFilter.entries.split(";"))
+        )
     }
 }

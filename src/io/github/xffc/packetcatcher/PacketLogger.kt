@@ -39,15 +39,12 @@ object PacketLogger {
         val packetId = packet.type().id.toString()
 
         val filter = filters[packet.type().flow] ?: return
-        println("filerting ${filter.first} in ${filter.second.joinToString()}")
         val passed = when (filter.first) {
             Type.WHITELIST -> packetId in filter.second
             Type.BLACKLIST -> packetId !in filter.second
         }
 
         if (!passed) return
-
-        println("WRITING $packetId")
 
         mutex.withLock {
             withContext(Dispatchers.IO) {
@@ -77,7 +74,6 @@ object PacketLogger {
 
     @JvmStatic
     fun start(ctx: Channel) {
-        println(enabled)
         if (!enabled) return
         val host = ctx.remoteAddress() as InetSocketAddress
         files[ctx] = File("PD-${host.hostString}-${System.currentTimeMillis() / 1000}.txt")
