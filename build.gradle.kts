@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "io.github.xffc"
-version = "1.0"
+version = "1.1"
 
 repositories {
     maven("https://maven.terraformersmc.com/releases/")
