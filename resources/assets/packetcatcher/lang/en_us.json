@@ -1,13 +1,18 @@
 {
-  "text.autoconfig.packetcatcher.title": "Packet catcher config",
-  "text.autoconfig.packetcatcher.option.enabled": "Enabled?",
-  "text.autoconfig.packetcatcher.option.titleFormat": "Title format",
-  "text.autoconfig.packetcatcher.option.valueFormat": "Value format",
-  "text.autoconfig.packetcatcher.option.timeFormat": "Time format",
-  "text.autoconfig.packetcatcher.option.serverboundFilter": "Serverbound filter",
-  "text.autoconfig.packetcatcher.option.serverboundFilter.entries": "Packets",
-  "text.autoconfig.packetcatcher.option.serverboundFilter.type": "Filter type",
-  "text.autoconfig.packetcatcher.option.clientboundFilter": "Clientbound filter",
-  "text.autoconfig.packetcatcher.option.clientboundFilter.entries": "Packets",
-  "text.autoconfig.packetcatcher.option.clientboundFilter.type": "Filter type"
+  "yacl3.config.packetcatcher:config.category.main": "Packet catcher config",
+  "yacl3.config.packetcatcher:config.enabled": "Enabled?",
+  "yacl3.config.packetcatcher:config.titleFormat": "Title format",
+  "yacl3.config.packetcatcher:config.valueFormat": "Value format",
+  "yacl3.config.packetcatcher:config.timeFormat": "Time format",
+
+  "yacl3.config.packetcatcher:config.category.serverbound": "Serverbound packets config",
+  "yacl3.config.packetcatcher:config.serverboundEntries": "Packet list",
+  "yacl3.config.packetcatcher:config.serverboundFilter": "Filter type",
+
+  "yacl3.config.packetcatcher:config.category.clientbound": "Clientbound packets config",
+  "yacl3.config.packetcatcher:config.clientboundEntries": "Packet list",
+  "yacl3.config.packetcatcher:config.clientboundFilter": "Filter type",
+
+  "yacl3.config.packetcatcher:config.filterType.blacklist": "Blacklist",
+  "yacl3.config.packetcatcher:config.filterType.whitelist": "Whitelist"
 }

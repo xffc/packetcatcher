@@ -7,7 +7,7 @@ minecraft = "26.2"
 fabric-loader = "0.19.3"
 fabric-api = "0.154.2+26.2"
 fabric-kotlin = "1.13.12+kotlin.2.4.0"
-clothconfig = "26.2.155"
+yacl = "3.9.5+26.2-fabric"
 modmenu = "20.0.1"
 
 [libraries]
@@ -15,7 +15,7 @@ minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
 fabric-loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric-loader" }
 fabric-api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fabric-api" }
 fabric-kotlin = { module = "net.fabricmc:fabric-language-kotlin", version.ref = "fabric-kotlin" }
-clothconfig = { module = "me.shedaniel.cloth:cloth-config-fabric", version.ref = "clothconfig" }
+yacl = { module = "dev.isxander:yet-another-config-lib", version.ref = "yacl" }
 modmenu = { module = "com.terraformersmc:modmenu", version.ref = "modmenu" }
 
 [plugins]

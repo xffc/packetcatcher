@@ -21,4 +21,4 @@ Time formatting is simply Java's [DateTimeFormatter pattern](https://docs.oracle
 
 ### Filtering
 
-Each packet in the field is separated by a ";"
+Each packet contains namespace (example: clientbound `minecraft:pong_response`)

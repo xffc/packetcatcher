@@ -1,13 +1,18 @@
 {
-  "text.autoconfig.packetcatcher.title": "Конфигурация Packet catcher",
-  "text.autoconfig.packetcatcher.option.enabled": "Включён?",
-  "text.autoconfig.packetcatcher.option.titleFormat": "Формат заголовка",
-  "text.autoconfig.packetcatcher.option.valueFormat": "Формат значения",
-  "text.autoconfig.packetcatcher.option.timeFormat": "Формат времени",
-  "text.autoconfig.packetcatcher.option.serverboundFilter": "Фильтр serverbound",
-  "text.autoconfig.packetcatcher.option.serverboundFilter.entries": "Пакеты",
-  "text.autoconfig.packetcatcher.option.serverboundFilter.type": "Тип фильтрации",
-  "text.autoconfig.packetcatcher.option.clientboundFilter": "Фильтр clientbound",
-  "text.autoconfig.packetcatcher.option.clientboundFilter.entries": "Пакеты",
-  "text.autoconfig.packetcatcher.option.clientboundFilter.type": "Тип фильтрации"
+  "yacl3.config.packetcatcher:config.category.main": "Конфигурация Packet catcher",
+  "yacl3.config.packetcatcher:config.enabled": "Включён?",
+  "yacl3.config.packetcatcher:config.titleFormat": "Формат заголовка",
+  "yacl3.config.packetcatcher:config.valueFormat": "Формат значения",
+  "yacl3.config.packetcatcher:config.timeFormat": "Формат времени",
+
+  "yacl3.config.packetcatcher:config.category.serverbound": "Конфигурация serverbound пакетов",
+  "yacl3.config.packetcatcher:config.serverboundEntries": "Список пакетов",
+  "yacl3.config.packetcatcher:config.serverboundFilter": "Тип фильтра",
+
+  "yacl3.config.packetcatcher:config.category.clientbound": "Конфигурация clientbound пакетов",
+  "yacl3.config.packetcatcher:config.clientboundEntries": "Список пакетов",
+  "yacl3.config.packetcatcher:config.clientboundFilter": "Тип фильтра",
+
+  "yacl3.config.packetcatcher:config.filterType.blacklist": "Чёрный список",
+  "yacl3.config.packetcatcher:config.filterType.whitelist": "Белый список"
 }

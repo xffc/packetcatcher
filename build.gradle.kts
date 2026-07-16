@@ -10,8 +10,8 @@ group = "io.github.xffc"
 version = "1.0"
 
 repositories {
-    maven("https://maven.shedaniel.me/")
     maven("https://maven.terraformersmc.com/releases/")
+    maven("https://maven.isxander.dev/releases")
 }
 
 dependencies {
@@ -19,7 +19,7 @@ dependencies {
     implementation(libs.fabric.loader)
     implementation(libs.fabric.api)
     implementation(libs.fabric.kotlin)
-    implementation(libs.clothconfig)
+    implementation(libs.yacl)
     implementation(libs.modmenu)
 }
 
@@ -46,4 +46,6 @@ fabricModJson {
     depends("minecraft", "~${libs.versions.minecraft.get()}")
     depends("java", ">=25")
     depends("fabric-api", "*")
+    depends("modmenu", ">=${libs.versions.modmenu.get()}")
+    depends("yet_another_config_lib_v3", ">=${libs.versions.yacl.get()}")
 }
